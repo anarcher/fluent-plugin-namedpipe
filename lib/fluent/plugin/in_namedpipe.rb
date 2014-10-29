@@ -14,7 +14,7 @@ module Fluent
         config_param :path, :string
         config_param :tag , :string
         #TODO: Not use yet
-        #config_param :receive_interval, :time, :default => 1
+        config_param :receive_interval, :time, :default => 1
 
         def configure(conf)
             super
@@ -63,6 +63,7 @@ module Fluent
                 begin
                     lines = @pipe.gets
                     if lines.nil?
+                        sleep @receive_interval
                         next
                     end
 

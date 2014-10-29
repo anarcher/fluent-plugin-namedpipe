@@ -1,7 +1,7 @@
 # -*- encoding: utf-8 -*-
 Gem::Specification.new do |gem|
   gem.name          = "fluent-plugin-namedpipe"
-  gem.version       = "0.0.1"
+  gem.version       = "0.0.2"
   gem.authors       = ["anarcher"]
   gem.email         = ["anarcher@gmail.com"]
   gem.description   = %q{fluentd plugin to named pipe input }
